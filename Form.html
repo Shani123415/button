@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form">
+      <h1>Register Now</h1>
+      <form>
+        <label for="name"> Full name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+        <label for="email">email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Example@gmail.com"
+          required
+        />
+        <label for="password">password</label>
+        <input
+          type="password"
+          name="password"
+          id="passsword"
+          placeholder="Enter your password"
+          required
+          minlength="6"
+          maxlength="8"
+        />
+        <label for="Birthdate">Date of Birth</label>
+        <input
+          type="date"
+          name="datetime"
+          id="Birthdate"
+          placeholder="Enter your birth date"
+          requireds
+        />
+        <label for="phone">phone</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Enter your phone number"
+          required
+        />
+        <label for="gender">Gender</label>
+        <br />
+        <div>
+          <label for="male">male</label>
+          <input type="radio" name="gender" id="male" required />
+          <label for="female">female</label>
+          <input type="radio" name="gender" id="female" required />
+        </div>
+        <label for="country">select country</label>
+        <select name="country" id="country">
+          <option value="America">America</option>
+          <option value="India">India</option>
+          <option value="China">China</option>
+          <option value="Pakistan">Pakistan</option>
+        </select>
+        <br />
+        <input type="submit" value="submit" class="sub" />
+
+        <input type="reset" value="reset" class="res" />
+      </form>
+    </div>
+  </body>
+</html>
